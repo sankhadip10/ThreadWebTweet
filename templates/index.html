@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Write a Tweet</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Write a Tweet</h1>
+
+        <div class="icon">
+            <i class="fas fa-pencil-alt"></i>
+        </div>
+
+        <form action="/tweet" method="POST">
+            <textarea name="tweet_content" rows="4" cols="50" placeholder="Enter your tweet here..."></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Add Font Awesome CDN for the pencil icon -->
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
